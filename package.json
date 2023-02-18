@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/osawa-koki/my-articles.git",
   "author": "osawa-koki <github@osawa.dev>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "dependencies": {
     "zenn-cli": "^0.1.140"
   }
