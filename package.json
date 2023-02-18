@@ -1,0 +1,11 @@
+{
+  "name": "my-articles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/osawa-koki/my-articles.git",
+  "author": "osawa-koki <github@osawa.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "zenn-cli": "^0.1.140"
+  }
+}
