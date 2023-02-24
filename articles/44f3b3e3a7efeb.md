@@ -44,9 +44,10 @@ resource "azurerm_linux_function_app" "function_app" {
   storage_account_name       = azurerm_storage_account.storage_account.name
   storage_account_access_key = azurerm_storage_account.storage_account.primary_access_key
 
-  dotnet_version = "6.0" // 🐙ここがないと503エラーになる!
-
   site_config {
+    application_stack {
+      dotnet_version = "6.0" // 🐙これがないと503エラーが発生する!
+    }
   }
 
   app_settings = {
