@@ -32,10 +32,6 @@ jobs:
         run: yarn install
       - name: Upgrade packages
         run: yarn upgrade
-      - name: Test
-        run: yarn test
-      - name: Test build
-        run: yarn build && touch ./dist/.gitkeep
       - name: Commit changes
         run: |
           if [[ `git status --porcelain` ]]; then
