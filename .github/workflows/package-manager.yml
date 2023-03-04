@@ -3,7 +3,7 @@ name: Check for Deprecated Packages and Auto-upgrade Packages
 on:
   push:
     branches:
-      - develop
+      - main
   schedule:
     - cron: '0 */6 * * *'
 
