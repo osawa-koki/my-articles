@@ -7,3 +7,4 @@ chapters:
   - 00_about-graphql
   - 01_simple-graphql-server
   - 02_use-typescript
+  - 03_graphql-schema-outside
