@@ -1,8 +1,8 @@
 ---
-title: "GraphQLスキーマを外部ファイル化する！"
+title: "GraphQLのスキーマ定義からTypeScriptの型定義を自動生成しよう！"
 ---
 
-## GraphQLスキーマを外部ファイル化する
+## GraphQLのスキーマ定義からTypeScriptの型定義を自動生成しよう
 
 今までは、GraphQLのスキーマ(型定義)とTypeScriptの型定義を別々に生成していましたが、GraphQL Code Generatorでは、GraphQLのスキーマからTypeScriptの型定義を生成することができます。  
 
