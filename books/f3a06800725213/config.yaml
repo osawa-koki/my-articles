@@ -8,3 +8,4 @@ chapters:
   - 01_simple-graphql-server
   - 02_use-typescript
   - 03_graphql-schema-outside
+  - 04_use-graphql-codegen
