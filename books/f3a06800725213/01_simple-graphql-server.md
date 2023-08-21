@@ -133,7 +133,7 @@ yarn dev
 
 では、ブラウザで`http://localhost:4000/`にアクセスしてみましょう。  
 
-![GraphQL sandbox](/images/graphql-server-step-by-step.webp)  
+![GraphQL sandbox](/images/graphql-server-step-by-step_sandbox.webp)  
 
 表示されているクエリをそのまま実行してみましょう！  
 正しくデータが取得できていることがわかります！  
