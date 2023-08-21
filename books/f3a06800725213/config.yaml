@@ -4,5 +4,5 @@ topics: ["GraphQL"]
 published: true
 price: 0
 chapters:
-  - 00.about-graphql
-  - 01.simple-graphql-server
+  - 00_about-graphql
+  - 01_simple-graphql-server
