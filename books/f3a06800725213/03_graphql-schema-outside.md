@@ -57,7 +57,7 @@ type Book {
 
 次にソースコードにベタ書きされている箇所を削除して、外部ファイルを読み込むようにします。  
 
-```ts
+```diff ts
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
