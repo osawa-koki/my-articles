@@ -53,7 +53,7 @@ yarn tsc --init
 では、先ほど作成したJavaScriptのスクリプトをTypeScriptに変換していきます。  
 `./index.ts`を作成し、以下のコードを記述します。  
 
-```diff_ts
+```diff ts
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 
