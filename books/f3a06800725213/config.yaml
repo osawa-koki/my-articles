@@ -6,3 +6,4 @@ price: 0
 chapters:
   - 00_about-graphql
   - 01_simple-graphql-server
+  - 02_use_typescript
