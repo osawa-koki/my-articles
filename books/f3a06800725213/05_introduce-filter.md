@@ -14,7 +14,7 @@ title: "フィルター機能を作成しよう！"
 
 `./data/pokemons.json`ファイルを作成して、以下の内容を保存します。  
 
-![pokemon.json](./images/pokemon.json)  
+<https://github.com/osawa-koki/graphql-server-step-by-step/blob/main/data/pokemons.json>  
 
 このデータを最初に読み込みます。  
 通常はデータベースから読み込むことになると思いますが、今回は簡単のためファイルロードとしています。  
