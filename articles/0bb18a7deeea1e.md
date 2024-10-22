@@ -6,18 +6,18 @@ topics: ["python", "dynamodb"]
 published: true
 ---
 
-## Dynamo DB - Python | Float vs Decimal
+## DynamoDB - Python | Float vs Decimal
 
-Dynamo DB では数値型として N(Number / Decimal)という型があります。  
+DynamoDB では数値型として N(Number / Decimal)という型があります。  
 しかしながら、JSON での表現は Float となります。  
 
 これにより、データ型不整合エラーが発生します。  
 
-これを回避するためには、Dynamo DB 用のデータの保持には Decimal を使用し、JSON 出力する際には Float に変換する必要があります。  
+これを回避するためには、DynamoDB 用のデータの保持には Decimal を使用し、JSON 出力する際には Float に変換する必要があります。  
 
 ## Float - Decimal (JSON)
 
-```python
+```py
 import json
 from decimal import Decimal
 
