@@ -8,7 +8,7 @@ published: true
 
 ## 前提
 
-Windowsユーザが会社でMac OSを使うことになったので、操作の違いをまとめました。  
+Windows ユーザが会社で Mac OS を使うことになったので、操作の違いをまとめました。  
 
 | Windows | Mac OS |
 | --- | --- |
