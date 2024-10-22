@@ -4,7 +4,7 @@ title: "GraphQLスキーマを外部ファイル化する！"
 
 ## GraphQLスキーマを外部ファイル化する
 
-先ほどはGraphQLのスキーマをソースコード内で直接定義しました。  
+先ほどは GraphQL のスキーマをソースコード内で直接定義しました。  
 
 ```ts
 const typeDefs = `
@@ -19,8 +19,8 @@ const typeDefs = `
 `;
 ```
 
-可読性の観点やGitの差分を見やすくするために、スキーマを外部ファイル化することが多いです。  
-ということで、スキーマを外部ファイル化してみましょう！  
+可読性の観点や Git の差分を見やすくするために、スキーマを外部ファイル化することが多いです。  
+ということで、スキーマを外部ファイル化してみましょう。  
 
 <https://the-guild.dev/graphql/tools/docs/schema-loading>  
 
@@ -32,7 +32,7 @@ const typeDefs = `
 yarn add @graphql-tools/graphql-file-loader @graphql-tools/load @graphql-tools/schema
 ```
 
-これで、外部ファイルに定義したスキーマの読み込み、スキーマのGraphQLサーバへの適用ができるようになりました！  
+これで、外部ファイルに定義したスキーマの読み込み、スキーマの GraphQL サーバへの適用ができるようになりました。  
 
 ## スキーマの外部ファイル化
 
@@ -121,5 +121,5 @@ import { startStandaloneServer } from '@apollo/server/standalone';
   .catch((e) => console.error(e));
 ```
 
-この状態で、`yarn dev`を実行してみましょう！  
-今までと同じようにGraphQLサーバが起動することが確認できると思います！  
+この状態で、`yarn dev`を実行してみましょう。  
+今までと同じように GraphQL サーバが起動することを確認できます。  

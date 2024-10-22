@@ -17,14 +17,23 @@ title: "フィルター機能を作成しよう！"
 <https://github.com/osawa-koki/graphql-server-step-by-step/blob/main/data/pokemons.json>  
 
 このデータを最初に読み込みます。  
-通常はデータベースから読み込むことになると思いますが、今回は簡単のためファイルロードとしています。  
+通常はデータベースから読み込むことになりますが、今回は簡単のためファイルロードとしています。  
 
 ```ts
 const pokemons: Pokemon[] = await fs.readFile('./data/pokemons.json', 'utf-8').then((data) => JSON.parse(data))
 ```
 
 次にフィルターを受け取って、当該フィルターに合致するポケモンのみを返すように修正してみましょう。  
-リゾルバの引数には、第一引数に親オブジェクト、第二引数に引数、第三引数にコンテキスト、第四引数に情報が渡されます。  
+
+リゾルバの引数には以下のデータが渡されます。  
+
+| 引数 | 渡されるデータ |
+| --- | --- |
+| 第一引数 | 親オブジェクト |
+| 第二引数 | 引数 |
+| 第三引数 | コンテキスト |
+| 第四引数 | 情報 |
+
 ※ <https://www.apollographql.com/docs/apollo-server/data/resolvers/>
 
 第二引数のフィルタを取得して、これに沿ったポケモンのみを返すように修正してみましょう。  
@@ -102,7 +111,7 @@ const resolvers: Resolvers = {
 }
 ```
 
-では、クエリを実行してみましょう！  
+では、クエリを実行してみましょう。  
 
 ```graphql
 query ExampleQuery {
@@ -395,4 +404,4 @@ query ExampleQuery {
 }
 ```
 
-これで、HPが100以上のポケモンのみを取得することができました！  
+これで、HP が 100 以上のポケモンのみを取得できました。  
