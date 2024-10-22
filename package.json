@@ -1,12 +1,12 @@
 {
-  "name": "my-articles",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/osawa-koki/my-articles.git",
+  "name": "my-articles-for-zenn",
+  "repository": "https://github.com/osawa-koki/my-articles-for-zenn.git",
   "author": "osawa-koki <github@osawa.dev>",
   "license": "Apache-2.0",
   "scripts": {
-    "make": "zenn new:article"
+    "new:article": "zenn new:article",
+    "new:book": "zenn new:book",
+    "preview": "zenn preview"
   },
   "dependencies": {
     "zenn-cli": "^0.1.141"
