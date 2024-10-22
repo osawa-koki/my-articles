@@ -1,0 +1,7 @@
+title: "画像判定AIをイチから実装していく！"
+summary: "機械学習を用いて、指定した画像に写っている犬の犬種を判定するAIを実装しましょう！"
+topics: ["AI", "機械学習", "画像判定", "Python", "TensorFlow"]
+published: false
+price: 0
+chapters:
+  - 00_what_we_will_do
