@@ -6,3 +6,4 @@ price: 0
 chapters:
   - 00_what_we_will_do
   - 01_prepare_dataset
+  - 02_prepare_google_colab
