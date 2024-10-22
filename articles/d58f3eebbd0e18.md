@@ -8,9 +8,9 @@ published: true
 
 ## 前提
 
-Windowsユーザが会社でMacOSを使うことになったので、操作の違いをまとめました。  
+Windowsユーザが会社でMac OSを使うことになったので、操作の違いをまとめました。  
 
-| Windows | MacOS |
+| Windows | Mac OS |
 | --- | --- |
 | 11 Home | Ventura 13 |
 
@@ -20,29 +20,39 @@ Windowsユーザが会社でMacOSを使うことになったので、操作の�
 
 🪟🪟🪟 Windows  
 
-「Windowsキー」+「↑」キー  
+```key
+「Windowsキー」+「↑」キー
+```
 
-🍎🍎🍎 MacOS
+🍎🍎🍎 Mac OS
 
-「コマンドキー」+「コントロールキー」+「F」  
+```key
+「コマンドキー」+「コントロールキー」+「F」
+```
 
 ### $ アクティブウィンドウの変更
 
 🪟🪟🪟 Windows  
 
-「Windowsキー」+「Tabキー」  
+```key
+「Windowsキー」+「Tabキー」
+```
 
-🍎🍎🍎 MacOS  
+🍎🍎🍎 Mac OS  
 
-「コマンドキー」+「Tabキー」  
+```key  
+「コマンドキー」+「Tabキー」
+```
 
 ### コピー履歴の表示
 
 🪟🪟🪟 Windows  
 
-「Windowsキー」+「Vキー」  
+```key
+「Windowsキー」+「Vキー」
+```
 
-🍎🍎🍎 MacOS  
+🍎🍎🍎 Mac OS  
 
 `Clipy(https://clipy-app.com/)`を使いましょう。  
 
@@ -50,8 +60,12 @@ Windowsユーザが会社でMacOSを使うことになったので、操作の�
 
 🪟🪟🪟 Windows  
 
-「Windowsキー」+「Lキー」  
+```key
+「Windowsキー」+「Lキー」
+```
 
-🍎🍎🍎 MacOS  
+🍎🍎🍎 Mac OS  
 
-「コマンドキー」+「コントロールキー」+「Qキー」  
+```key
+「コマンドキー」+「コントロールキー」+「Qキー」
+```
