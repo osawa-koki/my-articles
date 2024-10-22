@@ -4,7 +4,11 @@ title: "GraphQLのスキーマ定義からTypeScriptの型定義を自動生成�
 
 ## GraphQLのスキーマ定義からTypeScriptの型定義を自動生成しよう
 
-今までは、GraphQLのスキーマ(型定義)とTypeScriptの型定義を別々に生成していましたが、GraphQL Code Generatorでは、GraphQLのスキーマからTypeScriptの型定義を生成することができます。  
+今までは、GraphQL のスキーマ(型定義)と TypeScript の型定義を別々に生成していました。  
+この方法では、スキーマ定義と型定義を手動で同期させる必要があります。  
+非常に不便です。  
+
+GraphQL Code Generator を用いると、GraphQL のスキーマから TypeScript の型定義を自動生成できます。  
 
 ## 必要なパッケージをインストールする
 
@@ -16,7 +20,7 @@ yarn add -D @graphql-codegen/cli @graphql-codegen/typescript @graphql-codegen/ty
 
 ## GraphQL Code Generatorの設定ファイルを作成する
 
-次に、GraphQL Code Generatorの設定ファイルを作成します。
+次に、GraphQL Code Generator の設定ファイルを作成します。
 
 ```bash
 yarn graphql-codegen init
@@ -51,7 +55,7 @@ yarn graphql-codegen init
 ? What script in package.json should run the codegen? codegen
 ```
 
-これで、`yarn codegen`を実行すると、GraphQLのスキーマからTypeScriptの型定義を生成することができます。  
+これで、`yarn codegen`を実行すると、GraphQL のスキーマから TypeScript の型定義を生成できます。  
 実際に、`yarn codegen`を実行してみましょう。  
 
 ```bash
@@ -85,7 +89,7 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 以下のファイルが生成されていることを確認してください。  
 
 - `./src/generated/graphql.ts`
-- `graphql.schema.json` (Introspectionをオンにした場合のみ)
+- `graphql.schema.json` (Introspection をオンにした場合のみ)
 
 ## 自動生成されたデータ型を使用する
 

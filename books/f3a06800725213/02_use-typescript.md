@@ -4,14 +4,14 @@ title: "GraphQLサーバをTypeScriptに変換してみよう！"
 
 ## GraphQLサーバをTypeScriptに変換してみよう
 
-GraphQLサーバをTypeScriptに変換してみましょう！  
-[@apollo/serverの公式サイト](https://www.apollographql.com/docs/apollo-server/getting-started)ではTypeScriptでの実装方法が推奨されています。  
+GraphQL サーバを TypeScript に変換してみましょう。  
+[@apollo/serverの公式サイト](https://www.apollographql.com/docs/apollo-server/getting-started)では TypeScript での実装方法が推奨されています。  
 
-ということで先ほど作成したGraphQLサーバをTypeScriptに変換してみます。  
+ということで先ほど作成した GraphQL サーバを TypeScript に変換してみます。  
 
 ## TypeScriptの設定イロイロ
 
-最初にTypeScriptの設定を行います。  
+最初に TypeScript を設定します。  
 必要なパッケージをインストールします。  
 
 ```bash
@@ -37,7 +37,6 @@ yarn tsc --init
 ```
 
 また、簡単のため、モジュールモードを解除します。  
-本当はモジュールモードで実行したいのですが、、、  
 
 `package.json`の`type`を以下のように変更します。  
 
@@ -50,7 +49,7 @@ yarn tsc --init
 
 ## JSスクリプトの変換
 
-では、先ほど作成したJavaScriptのスクリプトをTypeScriptに変換していきます。  
+では、先ほど作成した JavaScript のスクリプトを TypeScript に変換していきます。  
 `./index.ts`を作成し、以下のコードを記述します。  
 
 ```diff ts
@@ -110,15 +109,15 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 
 `Book`というデータ型を定義して、`books`という変数や、リゾルバの戻り値の型を定義しています。  
 
-また、TLAの問題に関しても修正しています。  
-これを実行してみます！  
+また、TLA の問題も修正しています。  
+これを実行してみます。  
 
 ```bash
 yarn dev
 ```
 
-これでも問題なくサーバが起動できました！  
-これでTypeScriptでのGraphQLサーバの実装ができました！  
+これでも問題なくサーバが起動できました。  
+これで TypeScript での GraphQL サーバの実装の完了です。  
 
 ## 型チェックコマンドの追加
 
@@ -135,18 +134,18 @@ yarn dev
 }
 ```
 
-これで以下のコマンドで型チェックができるようになりました！  
+これで以下のコマンドで型チェックができるようになりました。  
 
 ```bash
 yarn type-check
 ```
 
-正しく型チェックができることを確認しておきましょう！  
+正しく型チェックができることを確認しておきましょう。  
 
 ## このコードの問題点
 
-お気づきの方もいるかもしれませんが、このコードには問題点があります。  
-GraphQLのスキーマ定義に`Book`という型を定義していますが、これと全く同じ型をTypeScriptで定義しています。  
+このコードには問題点があります。  
+GraphQL のスキーマ定義に`Book`という型を定義していますが、これと全く同じ型を TypeScript で定義しています。  
 
 以下の部分が該当します。  
 
@@ -168,5 +167,5 @@ const typeDefs = `
 `;
 ```
 
-これは、GraphQLのスキーマ定義とによってTypeScriptの型を生成することで解決できます。  
+これは、GraphQL のスキーマ定義とによって TypeScript の型を生成することで解決できます。  
 この方法についてはのちほど解説します。  

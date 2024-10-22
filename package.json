@@ -7,7 +7,7 @@
     "new:article": "zenn new:article",
     "new:book": "zenn new:book",
     "preview": "zenn preview",
-    "textlint": "textlint */*.md"
+    "textlint": "textlint ./articles/*.md ./books/*/*.md"
   },
   "dependencies": {
     "textlint": "^14.2.1",

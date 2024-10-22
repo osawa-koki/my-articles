@@ -4,7 +4,7 @@ title: "簡単なGraphQLサーバを作成してみよう！"
 
 ## はじめに
 
-このチャプターではNode.jsを用いて最も簡単なGraphQLサーバを実装してみます。  
+このチャプターでは Node.js を用いて最も簡単な GraphQL サーバを実装してみます。  
 以下の環境が用意されていることを想定します。  
 
 | name | version |
@@ -14,7 +14,7 @@ title: "簡単なGraphQLサーバを作成してみよう！"
 
 ## Node.jsプロジェクトの作成
 
-まずは、Node.jsプロジェクトを作成します。  
+まずは、Node.js プロジェクトを作成します。  
 
 ```bash
 # ディレクトリの作成と移動。
@@ -36,13 +36,13 @@ yarn init -y
 
 ## 必要なパッケージのインストール
 
-次にGraphQLサーバを実装するために必要なパッケージをインストールします。  
+次に GraphQL サーバを実装するために必要なパッケージをインストールします。  
 
 ```bash
 yarn add @apollo/server graphql
 ```
 
-`graphql`はGraphQLに関するパッケージで、`@apollo/server`はGraphQLサーバを実装するためのパッケージです。  
+`graphql`は GraphQL に関するパッケージで、`@apollo/server`は GraphQL サーバを実装するためのパッケージです。  
 
 ---
 
@@ -66,12 +66,12 @@ yarn add -D nodemon
 }
 ```
 
-`dev`はホットリロードを実行するためのスクリプトで、`start`は通常の起動を行うためのスクリプトです。  
+`dev`はホットリロードを実行するためのスクリプトで、`start`は通常の起動するためのスクリプトです。  
 開発時は`dev`を、本番環境では`start`を実行するようにします。  
 
 ## JSスクリプトの作成
 
-では、早速GraphQLサーバを実装していきましょう。  
+では、早速 GraphQL サーバを実装していきましょう。  
 `./index.js`を作成し、以下のコードを記述します。  
 
 ```js
@@ -135,8 +135,8 @@ yarn dev
 
 ![GraphQL sandbox](/images/graphql-server-step-by-step_sandbox.webp)  
 
-表示されているクエリをそのまま実行してみましょう！  
-正しくデータが取得できていることがわかります！  
+表示されているクエリをそのまま実行してみましょう。  
+正しくデータが取得できていることがわかります。  
 
 ## クエリについて
 
@@ -203,7 +203,7 @@ query ExampleQuery {
 
 ## Query・Mutation・Subscription
 
-GraphQLには、`Query`・`Mutation`・`Subscription`という3つの型があります。  
+GraphQL には、`Query`・`Mutation`・`Subscription`という 3 つの型があります。  
 
 | name | description |
 | --- | --- |
@@ -211,19 +211,21 @@ GraphQLには、`Query`・`Mutation`・`Subscription`という3つの型があ�
 | Mutation | データの更新 |
 | Subscription | データの購読 |
 
-REST APIでは、`GET`・`POST`・`PUT`・`DELETE`という4つのメソッドがありますが、GraphQLでは、`Query`・`Mutation`・`Subscription`という3つの型でそれぞれの役割を担っています。  
+REST API では、`GET`・`POST`・`PUT`・`DELETE`という 4 つのメソッドがあります。  
+GraphQL では、`Query`・`Mutation`・`Subscription`という 3 つの型でそれぞれの役割を担っています。  
 
-GETメソッドは、`Query`に相当し、データの取得を行います。  
-POST・PUT・DELETEメソッドは、`Mutation`に相当し、データの更新を行います。  
-また、`Subscription`は、データの購読を行います。  
-こちらは、内部的にWebSocketを使用してリアルタイムにデータを取得することができます。  
+`GET`メソッドは、`Query`に相当し、データを取得します。  
+`POST`・`PUT`・`DELETE`メソッドは、`Mutation`に相当し、データを更新します。  
+
+`Subscription`は、データの購読します。  
+こちらは、内部的に WebSocket を使用してリアルタイムにデータを取得できます。  
 
 ## スクリプトの解説
 
 最初にコードで使用するパッケージをインポートしています。  
 
 少し前までは、`apollo-server`パッケージを使用していましたが、現在は`@apollo/server`パッケージを使用するようになっています。  
-2023年の10月までは`apollo-server`パッケージもサポートされていますが、今後は`@apollo/server`パッケージを使用するようにしましょう。  
+2023 年の 10 月までは`apollo-server`パッケージもサポートされていますが、今後は`@apollo/server`パッケージを使用するようにしましょう。  
 
 また、`startStandaloneServer`は`@apollo/server/standalone`パッケージに含まれています。  
 これは、`ApolloServer`を簡単に起動するための関数です。  
@@ -233,10 +235,10 @@ import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 ```
 
-次に、GraphQLのスキーマを定義しています。  
+次に、GraphQL のスキーマを定義しています。  
 ここでは、`Book`という型と、`Query`という型を定義しています。  
 
-GraphQLで使用できる型は、以下のようなものがあります。  
+GraphQL で使用できる型は、以下のようなものがあります。  
 
 - `Int`
 - `Float`
@@ -263,7 +265,7 @@ const typeDefs = `
 ```
 
 ここでは、実際のデータを定義しています。  
-通常はデータベースから取得することになると思いますが、今回はサンプルなので、配列でそのまま定義しています。  
+通常はデータベースから取得することになりますが、今回はサンプルなので配列でそのまま定義しています。  
 
 ```js
 const books = [
@@ -283,7 +285,8 @@ const books = [
 リゾルバとは、クエリを実行する際に呼び出される関数のことです。  
 ここでは、`books`を取得するクエリを定義しています。  
 
-フィルタ条件などを指定する場合には、引数を取る関数を定義して、その中でフィルタを行うようにしますが、ここではフィルタを行わないので、空の引数を受け取る関数を定義しています。  
+フィルタ条件などを指定する場合には、引数を取る関数を定義してその中でフィルタを行うようにします。  
+今回はフィルタを行わないので空の引数を受け取る関数を定義しています。  
 
 ```js
 const resolvers = {
