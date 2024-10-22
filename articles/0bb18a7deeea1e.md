@@ -11,7 +11,7 @@ published: true
 Dynamo DBでは数値型としてN(Number / Decimal)という型があります。  
 しかしながら、JSONでの表現はFloatとなります。  
 
-それによってデータ型不整合エラーが発生することがあります。  
+これにより、データ型不整合エラーが発生します。  
 
 これを回避するためには、Dynamo DB用のデータの保持にはDecimalを使用し、JSON出力する際にはFloatに変換する必要があります。  
 

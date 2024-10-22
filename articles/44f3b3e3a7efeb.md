@@ -18,15 +18,18 @@ TerraformでAzure Functionsを構築してアクセスすると503 Service Unava
 
 答えは.NETのバージョンが指定されていないからでした。  
 
-## なぜ、これでプロビジョニングできたの？
+## なぜ、これでプロビジョニングできたか
 
-これがなぞ。  
-Azureポータルからリソースを作成しようとするとこのようなことは発生しませんが、Terraformで`azurerm_linux_function_app`を使用し、`dotnet_version`を指定しないでプロビジョニングすると、503エラーが発生しました。  
+これが謎。  
 
-旧来の`azurerm_function_app`では、プロビジョニング時にエラーが発生しますが、4.0から推奨された`azurerm_linux_function_app`では、プロビジョニングは成功します。  
+Azureポータルからリソースを作成しようとするとこのようなことは発生しませんでした。
+しかし、Terraformで`azurerm_linux_function_app`を使用し、`dotnet_version`を指定しないでプロビジョニングすると、503エラーが発生しました。  
+
+旧来の`azurerm_function_app`では、プロビジョニング時にエラーが発生します。
+しかし、4.0から推奨された`azurerm_linux_function_app`では、プロビジョニングは成功します。  
 プロビジョニングには成功して、実行時に503エラーのみを出力するため、原因追及が困難でした。  
 
-また、ChatGPTに聞いてみても、回答してくれませんでした。  
+ChatGPTに聞いてみても、回答してくれませんでした。  
 これはChatGPTが使用しているデータモデルが古いため、`azurerm_linux_function_app`の動作については理解していないからでしょう。  
 
 ---

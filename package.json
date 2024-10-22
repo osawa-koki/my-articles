@@ -6,9 +6,14 @@
   "scripts": {
     "new:article": "zenn new:article",
     "new:book": "zenn new:book",
-    "preview": "zenn preview"
+    "preview": "zenn preview",
+    "textlint": "textlint */*.md"
   },
   "dependencies": {
+    "textlint": "^14.2.1",
+    "textlint-rule-preset-ja-spacing": "^2.4.3",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.1",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0",
     "zenn-cli": "^0.1.141"
   }
 }
