@@ -5,12 +5,12 @@
 ## コマンド一覧
 
 ```shell
-👇 新しい記事を作成する
-$ zenn new:article
+# 👇 新しい記事を作成する
+yarn new:article
 
-👇 新しい本を作成する
-$ zenn new:book
+# 👇 新しい本を作成する
+yarn new:book
 
-👇 投稿をプレビューする
-$ zenn preview
+# 👇 投稿をプレビューする
+yarn preview
 ```
