@@ -6,3 +6,4 @@ price: 0
 # 本に含めるチャプターを順番に並べましょう
 chapters:
   - 00_about
+  - 01_why_27017_is_needed
