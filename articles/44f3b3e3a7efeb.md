@@ -2,7 +2,7 @@
 title: "[Terraform] Azure Functions -> 503 Service Unavailable (Azure)"
 emoji: "🌊"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["Terraform", "Azure", "Azure Functions"]
+topics: ["terraform", "azure", "azurefunctions"]
 published: true
 ---
 

@@ -2,7 +2,7 @@
 title: "Windows - MacOS | 操作比較"
 emoji: "👌"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["Windows", "MacOS"]
+topics: ["windows", "macos"]
 published: true
 ---
 
