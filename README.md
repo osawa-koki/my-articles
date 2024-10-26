@@ -13,4 +13,10 @@ yarn new:book
 
 # 👇 投稿をプレビューする
 yarn preview
+
+# textlintを実行する
+yarn textlint
+
+# textlintを実行する (自動修正)
+yarn textlint --fix
 ```
