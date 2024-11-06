@@ -10,12 +10,12 @@ published: true
 
 GitHub Actions 上で、マージを実行すると`refusing to merge unrelated histories`エラーが発生しました。  
 このエラーは、ローカルでは再現せず、ローカル環境では問題なくマージできました。  
-`orphan`ブランチも存在しないため、原因の特定に苦したため、解決策を記載しておきます。
+`orphan`ブランチも存在せず、原因の特定に苦したため、解決策を記載しておきます。  
 
 ## 解決策
 
 シャロークローンを禁止します。 　
-具体的には、`actions/checkout@v3`内で`fetch-depth: 0`を指定します。
+具体的には、`actions/checkout@v3`内で`fetch-depth: 0`を指定します。  
 
 ```yml:*.yml
 - name: Checkout repository
