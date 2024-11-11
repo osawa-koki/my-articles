@@ -1,0 +1,9 @@
+title: "ISO/IEC 27017(ISMSクラウドセキュリティ)について"
+summary: "ISO/IEC 27017(ISMSクラウドセキュリティ)について詳しく解説します。"
+topics: ["isms", "isoiec27017", "cloud", "security"]
+published: true
+price: 0
+# 本に含めるチャプターを順番に並べましょう
+chapters:
+  - 00_about
+  - 01_why_27017_is_needed
