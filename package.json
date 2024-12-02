@@ -10,7 +10,7 @@
     "textlint": "textlint ./articles/*.md ./books/*/*.md"
   },
   "dependencies": {
-    "textlint": "^14.2.1",
+    "textlint": "^14.4.0",
     "textlint-rule-preset-ja-spacing": "^2.4.3",
     "textlint-rule-preset-ja-technical-writing": "^10.0.1",
     "textlint-rule-spellcheck-tech-word": "^5.0.0",
