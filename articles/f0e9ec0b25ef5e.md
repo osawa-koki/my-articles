@@ -79,6 +79,6 @@ AWS の IAM Identity Center の画面に戻り、各情報を入力します。
 | Primary Email | email | AWSユーザーのメールアドレスとして使用 |
 | First Name | givenName | AWSユーザーの「名」にマッピング |
 | Last Name | familyName | AWSユーザーの「姓」にマッピング |
-| Primary Email | userName |A WSユーザー名として使用（推奨） |
+| Primary Email | userName | AWSユーザー名として使用（推奨） |
 
 ![属性のマッピング](/images/setting-attribute-mapping.png)  
