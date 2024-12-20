@@ -21,3 +21,9 @@ AWS のマネジメントコンソールにログインします。
 IAM Identity Center を有効化します。  
 
 ![IAM Identity Centerの有効化](/images/iam-identity-center-init.png)  
+
+### 2. メタデータファイルのダウンロード
+
+<https://admin.google.com/ac/security/ssocert>にアクセスし、メタデータファイルをダウンロードします。  
+
+![メタデータファイルのダウンロード](/images/download-idp-metadata.png)  
