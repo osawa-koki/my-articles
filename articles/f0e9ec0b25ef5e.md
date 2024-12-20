@@ -14,6 +14,11 @@ AWS の IAM Identity Center を用いて、Google Workspace の認証情報を�
 
 ## 手順
 
+### 0. 前提条件
+
+- AWS Organization が有効化されていること。
+- Google Workspace を契約し、管理者権限を持っていること。
+
 ### 1. IAM Identity Centerの有効化
 
 AWS のマネジメントコンソールにログインします。  
