@@ -106,9 +106,32 @@ Googleによる認証画面へ遷移します。
 
 ---
 
+余談です。  
 IdP initiated SSOも可能です。  
 先ほど作成したカスタムSAMLアプリを選択し、アプリの詳細画面にアクセスします。  
 「SAMLログインをテスト」をクリックして、IdP initiated SSOを試してみましょう。  
 ![IdP initiated SSO](/images/idp-initiated-saml-signin.png)  
 
 こちらもまだユーザーが登録されていないため、ログインに失敗します。  
+
+### 5. ユーザーの登録
+
+IAM Identity Center のコンソール画面から「Users」へ移動し、「ユーザーを追加」をクリックします。  
+
+![ユーザーの追加](/images/iam-identity-center-users.png)  
+
+ユーザー情報を入力します。  
+大切なのは、ユーザー名です。  
+ユーザー名は属性マッピングで指定したものと一致している必要があります。  
+先ほどは「Primary Email」を「userName」としてマッピングしていたため、ユーザー名はメールアドレスとして入力します。  
+Google Workspace のユーザー名が`default@example.com`であれば、その認証情報を利用したAWSのユーザー名も`default@example.com`となります。  
+
+今回は簡単のため、グループでの管理は行いません。  
+そのまま進み、「ユーザーを追加」をクリックします。  
+
+ユーザの作成が完了したら、先ほどと同様にGoogle Workspace の SSO ログインを試してみましょう。  
+先ほどと異なり、今回はログインに成功します。  
+
+`AWS アクセスポータルに移動しました`とのメッセージが表示されれば成功です。  
+
+![AWSアクセスポータル](/images/aws-access-portal.png)  
