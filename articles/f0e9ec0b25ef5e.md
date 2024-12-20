@@ -84,17 +84,17 @@ AWS の IAM Identity Center の画面に戻り、各情報を入力します。
 ![属性のマッピング](/images/setting-attribute-mapping.png)  
 
 最後に、このアプリを有効化します。  
-サービスのステータスをオンにします。 　
+サービスのステータスをオンにします。
 
 ![アプリの有効化](/images/custom-saml-app-service-status.png)  
 
 ### 4. SSOログインしてみる (失敗する)
 
 では、Google Workspace の SSO ログインを試してみましょう。  
-ただし、まだSSO用のユーザを作成していないため、ログインに失敗します。  
+ただし、まだ SSO 用のユーザを作成していないため、ログインに失敗します。  
 
-IAM Identity Centerのコンソール画面から「Settings」へ移動し、「アイデンティティソース」内の「AWS access portal URL」をクリックします。  
-Googleによる認証画面へ遷移します。  
+IAM Identity Center のコンソール画面から「Settings」へ移動し、「アイデンティティソース」内の「AWS access portal URL」をクリックします。  
+Google による認証画面へ遷移します。  
 ログインに利用する Google アカウントを選択し、ログインします。  
 
 以下のようなエラーが表示されるはずです。  
@@ -107,9 +107,9 @@ Googleによる認証画面へ遷移します。
 ---
 
 余談です。  
-IdP initiated SSOも可能です。  
-先ほど作成したカスタムSAMLアプリを選択し、アプリの詳細画面にアクセスします。  
-「SAMLログインをテスト」をクリックして、IdP initiated SSOを試してみましょう。  
+IdP initiated SSO も可能です。  
+先ほど作成したカスタム SAML アプリを選択し、アプリの詳細画面にアクセスします。  
+「SAML ログインをテスト」をクリックして、IdP initiated SSO を試してみましょう。  
 ![IdP initiated SSO](/images/idp-initiated-saml-signin.png)  
 
 こちらもまだユーザーが登録されていないため、ログインに失敗します。  
@@ -124,12 +124,12 @@ IAM Identity Center のコンソール画面から「Users」へ移動し、「�
 大切なのは、ユーザー名です。  
 ユーザー名は属性マッピングで指定したものと一致している必要があります。  
 先ほどは「Primary Email」を「userName」としてマッピングしていたため、ユーザー名はメールアドレスとして入力します。  
-Google Workspace のユーザー名が`default@example.com`であれば、その認証情報を利用したAWSのユーザー名も`default@example.com`となります。  
+Google Workspace のユーザー名が`default@example.com`であれば、その認証情報を利用した AWS のユーザー名も`default@example.com`となります。  
 
 今回は簡単のため、グループでの管理は行いません。  
 そのまま進み、「ユーザーを追加」をクリックします。  
 
-ユーザの作成が完了したら、先ほどと同様にGoogle Workspace の SSO ログインを試してみましょう。  
+ユーザの作成が完了したら、先ほどと同様に Google Workspace の SSO ログインを試してみましょう。  
 先ほどと異なり、今回はログインに成功します。  
 
 `AWS アクセスポータルに移動しました`とのメッセージが表示されれば成功です。  
