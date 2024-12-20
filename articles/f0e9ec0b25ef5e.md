@@ -147,7 +147,7 @@ Google Workspace のユーザー名が`default@example.com`であれば、その
 ユーザーを追加したら、許可セットを設定します。  
 これによって、ユーザーがどのような権限を持つかを設定できます。  
 
-「IAM Identity Center」の「許可セット」を開きます。 　
+「IAM Identity Center」の「許可セット」を開きます。  
 「許可セットを作成」をクリックします。  
 
 ![許可セットの作成](/images/create-permission-set.png)  
