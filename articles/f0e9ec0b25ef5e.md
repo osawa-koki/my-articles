@@ -8,6 +8,6 @@ published: true
 
 ## 概要
 
-AWSのIAM Identity Centerを用いて、Google Workspaceの認証情報を用いてAWSにサインインする方法を紹介します。  
-静的な認証情報を使わずに、Google Workspaceの認証情報を使ってAWSにサインインすることで、セキュリティを向上させることができます。  
-ユーザー情報とユーザーの認証情報をGoogle Workspaceに集約することで、ユーザーの管理を簡略化することができます。  
+AWS の IAM Identity Center を用いて、Google Workspace の認証情報を用いて AWS にサインインする方法を紹介します。  
+静的な認証情報を使わずに、Google Workspace の認証情報を使って AWS にサインインすることで、セキュリティを向上させることができます。  
+ユーザー情報とユーザーの認証情報を Google Workspace に集約することで、ユーザーの管理を簡略化できます。  
