@@ -82,3 +82,19 @@ AWS の IAM Identity Center の画面に戻り、各情報を入力します。
 | Primary Email | userName | AWSユーザー名として使用（推奨） |
 
 ![属性のマッピング](/images/setting-attribute-mapping.png)  
+
+### 4. SSOログインしてみる (失敗する)
+
+では、Google Workspace の SSO ログインを試してみましょう。  
+ただし、まだSSO用のユーザを作成していないため、ログインに失敗します。  
+
+IAM Identity Centerのコンソール画面から「Settings」へ移動し、「アイデンティティソース」内の「AWS access portal URL」をクリックします。 　
+Googleによる認証画面へ遷移します。  
+ログインに利用する Google アカウントを選択し、ログインします。  
+
+以下のようなエラーが表示されるはずです。  
+
+![IAM Identity Centerのエラー](/images/iam-identity-center-signin-failure.png)  
+
+これは、IAM Identity Center にユーザーが登録されていないためです。  
+では、ユーザーを登録してみましょう。  
