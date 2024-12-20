@@ -179,3 +179,12 @@ Google Workspace のユーザー名が`default@example.com`であれば、その
 ---
 
 通常の IAM ユーザーは不要になるため、削除しておきましょう。  
+
+### 8. AWS access portal URLのカスタマイズ
+
+SAML によるサインインを開始するための URL をカスタマイズできます。  
+IAM Identity Center のコンソール画面から「Settings」へ移動し、「アイデンティティソース」内の「Actions」から「AWS access portal URL をカスタマイズ」をクリックします。  
+
+![AWS access portal URLのカスタマイズ](/images/customize-aws-access-portal-url.png)  
+
+希望するサブドメインを入力し、ログイン用の URL のサブドメインをカスタマイズできます。  
