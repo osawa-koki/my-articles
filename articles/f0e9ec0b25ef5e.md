@@ -50,14 +50,14 @@ Google Workspace の管理コンソールにログインします。
 
 アプリに関する情報を入力します。  
 
-![アプリ情報の入力](/images/setting-custom-app-overview.png)  
+![アプリ情報の入力](/images/setting-custom-app-detail.png)  
 
 アプリに関する情報を入力したら、「次へ」をクリックします。  
 メタデータをダウンロードします。  
 
-![メタデータのダウンロード](/images/download-metadata.png)  
+![メタデータのダウンロード](/images/download-idp-metadata.png)  
 
-サービスプロバイダの詳細を入力します。 　
+サービスプロバイダの詳細を入力します。  
 AWS の IAM Identity Center の画面に戻り、各情報を入力します。  
 
 | Google Workspace | AWS IAM Identity Center |
@@ -72,7 +72,7 @@ AWS の IAM Identity Center の画面に戻り、各情報を入力します。
 
 ![サービスプロバイダの詳細 - その他の項目](/images/setting-service-provider-other.png)  
 
-最後に属性のマッピングを行います。  
+属性のマッピングを行います。  
 
 | Google Workspaceの属性 | AWS側の属性名 | 説明 |
 | --- | --- | --- |
@@ -83,7 +83,7 @@ AWS の IAM Identity Center の画面に戻り、各情報を入力します。
 
 ![属性のマッピング](/images/setting-attribute-mapping.png)  
 
-最後に、このアプリを有効化します。 　
+最後に、このアプリを有効化します。  
 サービスのステータスをオンにします。 　
 
 ![アプリの有効化](/images/custom-saml-app-service-status.png)  
@@ -93,7 +93,7 @@ AWS の IAM Identity Center の画面に戻り、各情報を入力します。
 では、Google Workspace の SSO ログインを試してみましょう。  
 ただし、まだSSO用のユーザを作成していないため、ログインに失敗します。  
 
-IAM Identity Centerのコンソール画面から「Settings」へ移動し、「アイデンティティソース」内の「AWS access portal URL」をクリックします。 　
+IAM Identity Centerのコンソール画面から「Settings」へ移動し、「アイデンティティソース」内の「AWS access portal URL」をクリックします。  
 Googleによる認証画面へ遷移します。  
 ログインに利用する Google アカウントを選択し、ログインします。  
 
@@ -103,3 +103,12 @@ Googleによる認証画面へ遷移します。
 
 これは、IAM Identity Center にユーザーが登録されていないためです。  
 では、ユーザーを登録してみましょう。  
+
+---
+
+IdP initiated SSOも可能です。  
+先ほど作成したカスタムSAMLアプリを選択し、アプリの詳細画面にアクセスします。  
+「SAMLログインをテスト」をクリックして、IdP initiated SSOを試してみましょう。  
+![IdP initiated SSO](/images/idp-initiated-saml-signin.png)  
+
+こちらもまだユーザーが登録されていないため、ログインに失敗します。  
