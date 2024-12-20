@@ -22,7 +22,7 @@ IAM Identity Center を有効化します。
 
 ![IAM Identity Centerの有効化](/images/iam-identity-center-init.png)  
 
-### 2. IdPの設定
+### 2. IAM Identity Centerの設定
 
 IAM Identity Center のページに移動します。  
 「Settings」「アイデンティティソース」の「アクション」から「アイデンティティソースを変更」をクリックします。  
@@ -39,6 +39,7 @@ IAM Identity Center のページに移動します。
 ![外部アイデンティティプロバイダーの設定](/images/setting-external-idp.png)  
 
 この情報を用いて、Google Workspace の設定を行います。  
+一旦、AWS側の操作はここでストップして、Google Workspace の設定に移ります。  
 
 ### 3. Google Workspaceの設定
 
@@ -135,3 +136,47 @@ Google Workspace のユーザー名が`default@example.com`であれば、その
 `AWS アクセスポータルに移動しました`とのメッセージが表示されれば成功です。  
 
 ![AWSアクセスポータル](/images/aws-access-portal.png)  
+
+### 6. 許可セットの設定
+
+ユーザーを追加したら、許可セットを設定します。  
+これによって、ユーザーがどのような権限を持つかを設定できます。  
+
+「IAM Identity Center」の「許可セット」を開きます。 　
+「許可セットを作成」をクリックします。  
+
+![許可セットの作成](/images/create-permission-set.png)  
+
+今回は簡単のため、「事前定義された許可セット」から「AdministratorAccess」を選択します。 　
+許可セットの詳細はデフォルトのままで問題ありません。  
+「作成」をクリックします。  
+これで、許可セットの作成が完了しました。  
+
+![許可セットの作成完了](/images/permission-sets-list.png)  
+
+### 7. ユーザーへの許可セットの割り当て
+
+許可セットをユーザーに割り当てます。  
+作成したユーザーを選択し、「AWSアカウント」をクリックします。  
+
+![AWSアカウントへのアクセス](/images/assign-account.png)  
+
+「アカウントを割り当てる」をクリックします。 　
+
+対象のアカウントと許可セットを選択し、「Assign」をクリックします。  
+
+![許可セットの割り当て (アカウント)](/images/assign-account-target-account.png)  
+![許可セットの割り当て (許可セット)](/images/assign-account-target-permission-sets.png)  
+
+割り当てが完了したら、ユーザーの詳細画面に以下のような表示がされます。  
+
+![AWSアカウントへのアクセス](/images/access-to-aws-account.png)  
+
+では、Google Workspace の SSO ログインを試してみましょう。  
+以下のように、対象のアカウントと許可セットが表示されれば成功です。  
+
+![AWSアカウントへのアクセス](/images/aws-access-portal-granted.png)  
+
+対象のアカウントの許可セットをクリックして、ログインします。  
+正しくログインできれば成功です。  
+通常の AWS マネジメントコンソールにログインできます。  
