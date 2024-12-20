@@ -84,7 +84,7 @@ AWS の IAM Identity Center の画面に戻り、各情報を入力します。
 ![属性のマッピング](/images/setting-attribute-mapping.png)  
 
 最後に、このアプリを有効化します。  
-サービスのステータスをオンにします。
+サービスのステータスをオンにします。  
 
 ![アプリの有効化](/images/custom-saml-app-service-status.png)  
 
