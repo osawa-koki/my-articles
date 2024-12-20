@@ -39,3 +39,46 @@ IAM Identity Center のページに移動します。
 ![外部アイデンティティプロバイダーの設定](/images/setting-external-idp.png)  
 
 この情報を用いて、Google Workspace の設定を行います。  
+
+### 3. Google Workspaceの設定
+
+Google Workspace の管理コンソールにログインします。  
+<https://admin.google.com/>  
+
+「アプリ」→「ウェブアプリとモバイルアプリ」を選択し、「アプリを追加」から「カスタム SAML アプリの追加」をクリックします。 　
+![カスタム SAML アプリの追加](/images/create-custom-saml-app.png)  
+
+アプリに関する情報を入力します。  
+
+![アプリ情報の入力](/images/setting-custom-app-overview.png)  
+
+アプリに関する情報を入力したら、「次へ」をクリックします。  
+メタデータをダウンロードします。  
+
+![メタデータのダウンロード](/images/download-metadata.png)  
+
+サービスプロバイダの詳細を入力します。 　
+AWS の IAM Identity Center の画面に戻り、各情報を入力します。  
+
+| Google Workspace | AWS IAM Identity Center |
+| --- | --- |
+| ACS の URL | IAM Identity Center Assertion Consumer Service (ACS) の URL |
+| エンティティ ID | IAM Identity Center 発行者 URL |
+| 開始 URL | AWS access portal サインイン URL |
+
+![サービスプロバイダの詳細](/images/setting-service-provider.png)  
+
+その他の項目はデフォルトのままで問題ありません。  
+
+![サービスプロバイダの詳細 - その他の項目](/images/setting-service-provider-other.png)  
+
+最後に属性のマッピングを行います。  
+
+| Google Workspaceの属性 | AWS側の属性名 | 説明 |
+| --- | --- | --- |
+| Primary Email | email | AWSユーザーのメールアドレスとして使用 |
+| First Name | givenName | AWSユーザーの「名」にマッピング |
+| Last Name | familyName | AWSユーザーの「姓」にマッピング |
+| Primary Email | userName |A WSユーザー名として使用（推奨） |
+
+![属性のマッピング](/images/setting-attribute-mapping.png)  
