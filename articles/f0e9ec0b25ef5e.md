@@ -110,16 +110,6 @@ Google による認証画面へ遷移します。
 これは、IAM Identity Center にユーザーが登録されていないためです。  
 では、ユーザーを登録してみましょう。  
 
----
-
-余談です。  
-IdP initiated SSO も可能です。  
-先ほど作成したカスタム SAML アプリを選択し、アプリの詳細画面にアクセスします。  
-「SAML ログインをテスト」をクリックして、IdP initiated SSO を試してみましょう。  
-![IdP initiated SSO](/images/idp-initiated-saml-signin.png)  
-
-こちらもまだユーザーが登録されていないため、ログインに失敗します。  
-
 ### 5. ユーザーの登録
 
 IAM Identity Center のコンソール画面から「Users」へ移動し、「ユーザーを追加」をクリックします。  
