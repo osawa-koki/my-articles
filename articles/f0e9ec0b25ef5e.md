@@ -39,7 +39,7 @@ IAM Identity Center のページに移動します。
 ![外部アイデンティティプロバイダーの設定](/images/setting-external-idp.png)  
 
 この情報を用いて、Google Workspace の設定を行います。  
-一旦、AWS側の操作はここでストップして、Google Workspace の設定に移ります。  
+一旦、AWS 側の操作はここでストップして、Google Workspace の設定に移ります。  
 
 ### 3. Google Workspaceの設定
 
@@ -157,11 +157,11 @@ Google Workspace のユーザー名が`default@example.com`であれば、その
 ### 7. ユーザーへの許可セットの割り当て
 
 許可セットをユーザーに割り当てます。  
-作成したユーザーを選択し、「AWSアカウント」をクリックします。  
+作成したユーザーを選択し、「AWS アカウント」をクリックします。  
 
 ![AWSアカウントへのアクセス](/images/assign-account.png)  
 
-「アカウントを割り当てる」をクリックします。 　
+「アカウントを割り当てる」をクリックします。
 
 対象のアカウントと許可セットを選択し、「Assign」をクリックします。  
 
