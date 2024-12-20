@@ -188,3 +188,4 @@ IAM Identity Center のコンソール画面から「Settings」へ移動し、�
 ![AWS access portal URLのカスタマイズ](/images/customize-aws-access-portal-url.png)  
 
 希望するサブドメインを入力し、ログイン用の URL のサブドメインをカスタマイズできます。  
+変更は一度だけできるため、慎重に入力してください。  
