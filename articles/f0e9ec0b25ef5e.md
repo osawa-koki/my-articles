@@ -38,7 +38,7 @@ IAM Identity Center のページに移動します。
 
 ![外部アイデンティティプロバイダーの設定](/images/setting-external-idp.png)  
 
-この情報を用いて、Google Workspace の設定を行います。  
+この情報を用いて、Google Workspace の設定をします。  
 一旦、AWS 側の操作はここでストップして、Google Workspace の設定に移ります。  
 
 ### 3. Google Workspaceの設定
