@@ -4,7 +4,7 @@ title: "簡単なGraphQLサーバを作成してみよう！"
 
 ## はじめに
 
-このチャプターでは Node.js を用いて最も簡単な GraphQL サーバを実装してみます。  
+このチャプターでは Node.js を用いて最も簡単な GraphQL サーバーを実装してみます。  
 以下の環境が用意されていることを想定します。  
 
 | name | version |
@@ -36,18 +36,18 @@ yarn init -y
 
 ## 必要なパッケージのインストール
 
-次に GraphQL サーバを実装するために必要なパッケージをインストールします。  
+次に GraphQL サーバーを実装するために必要なパッケージをインストールします。  
 
 ```bash
 yarn add @apollo/server graphql
 ```
 
-`graphql`は GraphQL に関するパッケージで、`@apollo/server`は GraphQL サーバを実装するためのパッケージです。  
+`graphql`は GraphQL に関するパッケージで、`@apollo/server`は GraphQL サーバーを実装するためのパッケージです。  
 
 ---
 
 また、ホットリロードを実現するために`nodemon`をインストールします。  
-これで、ファイルの変更を検知して自動的にサーバを再起動してくれます。  
+これで、ファイルの変更を検知して自動的にサーバーを再起動してくれます。  
 
 ```bash
 yarn add -D nodemon
@@ -71,7 +71,7 @@ yarn add -D nodemon
 
 ## JSスクリプトの作成
 
-では、早速 GraphQL サーバを実装していきましょう。  
+では、早速 GraphQL サーバーを実装していきましょう。  
 `./index.js`を作成し、以下のコードを記述します。  
 
 ```js
@@ -119,7 +119,7 @@ console.log(`🚀  Server ready at: ${url}`);
 ```
 
 コードの中身については、後ほど説明します。  
-では、実際にサーバを起動してみましょう。  
+では、実際にサーバーを起動してみましょう。  
 
 ```bash
 yarn dev
@@ -297,7 +297,7 @@ const resolvers = {
 
 ```
 
-ここで、サーバをオブジェクトを作成しています。  
+ここで、サーバーをオブジェクトを作成しています。  
 引数にはデータ型を定義した`typeDefs`と、リゾルバを定義した`resolvers`を指定します。  
 
 ```js
@@ -308,7 +308,7 @@ const server = new ApolloServer({
 
 ```
 
-最後に、サーバを起動しています。  
+最後に、サーバーを起動しています。  
   
 ```js
 const { url } = await startStandaloneServer(server, {

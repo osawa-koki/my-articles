@@ -22,6 +22,18 @@ rules:
   - expected: DynamoDB
     patterns:
       - /dynamo ?db/i
+  - expected: Ruby
+    patterns:
+      - /ruby/i
+  - expected: Ruby on Rails
+    patterns:
+      - /ruby on rails/i
+  - expected: GraphQL
+    patterns:
+      - /graphql/i
   - expected: ユーザー
     patterns:
       - /ユーザ(?!ー)/
+  - expected: サーバー
+    patterns:
+      - /サーバ(?!ー)/

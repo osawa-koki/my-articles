@@ -32,7 +32,7 @@ const typeDefs = `
 yarn add @graphql-tools/graphql-file-loader @graphql-tools/load @graphql-tools/schema
 ```
 
-これで、外部ファイルに定義したスキーマの読み込み、スキーマの GraphQL サーバへの適用ができるようになりました。  
+これで、外部ファイルに定義したスキーマの読み込み、スキーマの GraphQL サーバーへの適用ができるようになりました。  
 
 ## スキーマの外部ファイル化
 
@@ -122,4 +122,4 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 ```
 
 この状態で、`yarn dev`を実行してみましょう。  
-今までと同じように GraphQL サーバが起動することを確認できます。  
+今までと同じように GraphQL サーバーが起動することを確認できます。  

@@ -2,12 +2,12 @@
 title: "GraphQLサーバをTypeScriptに変換してみよう！"
 ---
 
-## GraphQLサーバをTypeScriptに変換してみよう
+## GraphQLサーバーをTypeScriptに変換してみよう
 
-GraphQL サーバを TypeScript に変換してみましょう。  
+GraphQL サーバーを TypeScript に変換してみましょう。  
 [@apollo/serverの公式サイト](https://www.apollographql.com/docs/apollo-server/getting-started)では TypeScript での実装方法が推奨されています。  
 
-ということで先ほど作成した GraphQL サーバを TypeScript に変換してみます。  
+ということで先ほど作成した GraphQL サーバーを TypeScript に変換してみます。  
 
 ## TypeScriptの設定イロイロ
 
@@ -116,8 +116,8 @@ import { startStandaloneServer } from '@apollo/server/standalone';
 yarn dev
 ```
 
-これでも問題なくサーバが起動できました。  
-これで TypeScript での GraphQL サーバの実装の完了です。  
+これでも問題なくサーバーが起動できました。  
+これで TypeScript での GraphQL サーバーの実装の完了です。  
 
 ## 型チェックコマンドの追加
 
