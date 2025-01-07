@@ -22,3 +22,6 @@ rules:
   - expected: DynamoDB
     patterns:
       - /dynamo ?db/i
+  - expected: ユーザー
+    patterns:
+      - /ユーザ(?!ー)/
